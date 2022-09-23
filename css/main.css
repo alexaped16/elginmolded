@@ -49,28 +49,37 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  color: black;
+}
+
 h1 {
-  font-size: 2rem;
-  font-weight: 800;
-  font-family: "PT sans", sans-serif;
+  margin-top: 0;
+  font-size: 2.488rem;
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 2.074rem;
 }
 
 h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.728rem;
 }
 
-h2, h3, p, a {
-  font-family: "Open sans", sans-serif;
+h4 {
+  font-size: 1.44rem;
 }
 
-.main {
-  color: #004280;
+h5 {
+  font-size: 1.2rem;
+}
+
+small, .text_small {
+  font-size: 0.833rem;
 }
 
 nav {
@@ -443,74 +452,19 @@ a {
   margin-top: 100px;
 }
 
-.mainlayout {
-  display: grid;
-  height: 100vh;
-  grid-template-areas: "hero hero hero hero" "row1 row1 row1 row1" "row2 row2 row2 row2" "row3 row3 row3 row3" "footer footer footer footer" "copyright copyright copyright copyright";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: -webkit-min-content;
-  grid-auto-rows: min-content;
-}
-
-.hero {
-  grid-area: hero;
-  opacity: 50%;
-  background-color: white;
-}
-
-.row1 {
-  grid-area: row1;
-}
-
-.row2 {
-  grid-area: row2;
-}
-
-.row3 {
-  grid-area: row3;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.copyright {
-  grid-area: copyright;
+.mission-title {
+  font-size: 3em;
+  margin-bottom: 3rem;
+  font-weight: 800;
+  color: black;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
 }
 
 @media (max-width: 800px) {
-  .mainlayout {
-    display: grid;
-    height: 100vh;
-    grid-template-areas: "hero" "row1" "row2" "row3" "footer" "copyright";
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 1.2fr 1.2fr;
-  }
-}
-.splitlayout {
-  display: grid;
-  height: 100vh;
-  grid-template-areas: "section1 section1 section2 section2" "section1 section1 section2 section2";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: -webkit-min-content;
-  grid-auto-rows: min-content;
-}
-
-.section1 {
-  grid-area: section1;
-}
-
-.section2 {
-  grid-area: section2;
-}
-
-@media (max-width: 800px) {
-  .splitlayout {
-    display: grid;
-    height: 100vh;
-    grid-template-areas: "section1" "section2";
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 1.2fr 1.2fr;
+  .mission-title {
+    font-size: 30px;
   }
 }
 .white {
@@ -547,13 +501,13 @@ section, .section-dark {
   }
 }
 .big-image-quality {
-  height: 80vh;
+  height: 60vh;
   width: 100vw;
   position: relative;
   background-size: cover;
-  opacity: 80%;
-  background-position: 30% 30%;
-  background-image: url("/static/plant_pictures/IMG_7468_Fotor.jpg");
+  opacity: 60%;
+  background-position: 70% 70%;
+  background-image: url("/static/plant_pictures/IMG_7465_Fotor.jpg");
 }
 
 .overlay-product-line {
@@ -608,14 +562,14 @@ section.section--dark, .section--dark.section-dark {
 }
 
 #intro-animation {
-  background: rgba(0, 0, 0, 0.681);
+  background: rgba(245, 243, 243, 0.324);
   color: black;
 }
 
 .hero {
   box-sizing: border-box;
   display: flex;
-  min-height: 50vh;
+  min-height: 90vh;
   padding: 3rem;
   justify-content: center;
   flex-direction: column;
@@ -690,7 +644,7 @@ section.section--dark, .section--dark.section-dark {
   }
 }
 .big-image-divisions {
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
   position: relative;
   background-size: cover;
