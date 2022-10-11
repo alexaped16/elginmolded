@@ -455,7 +455,7 @@ section {
     width: 100vw;
     position: relative;
     background-size: cover;
-    opacity: 90%; 
+    opacity: 100%; 
     background-position: 5% 10%;
     background-image: url("/static/emp.png");
   }
@@ -481,7 +481,7 @@ section {
   }
 
   .big-image-facility{
-    height: 60vh;
+    height: 70vh;
     width: 100vw;
     position: relative;
     background-size: cover;
@@ -516,28 +516,17 @@ section {
 
   .overlay-home{
     position: absolute;
-    height: 50%;
-    width: 70%;
-    top: 100px;
-    right: 5rem;   
+    height: 100%;
+    width: 100%;    
     display: flex;
-    align-items:flex-end;
-    justify-content:left;
+    padding: 2rem;  
+    align-items:center; 
+    justify-content:center;
     flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.519);  
   }
 
-  .overlay-product-line{
-    position: absolute;
-    height: 50%;
-    width: 70%;
-    top: 200px;
-    right: 5rem;
-    color:black;  
-    display: flex;
-    align-items:flex-end;
-    justify-content:left;
-    flex-direction: column;
-  }
+
 
   .product-line-container{
     background-color: $basecolor;
@@ -1409,3 +1398,107 @@ fieldset {
 
 // SERVICES TAB TEST 
 
+
+.worko-tabs {
+  margin: 20px;
+  width: 80%;
+
+  .state{
+    position: absolute;
+    left: -10000px;
+  }
+
+  .flex-tabs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+      
+      .tab{
+        flex-grow: 1;
+        max-height: 40px;
+      }
+    
+      .panel {
+        background-color: $backgroundcolor;
+        padding: 20px;
+        min-height: 300px;
+        display: none;
+        width: 100%;
+        flex-basis: auto;
+    }
+  }
+
+  .tab {
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    background-color: rgba(204, 204, 204, 0.201);
+    cursor: hand;
+    cursor: pointer;
+    border-left: 10px solid #ccc;
+    
+      &:hover{
+        background-color: #fff;
+      }
+  }  
+}
+
+#tab-one:checked ~ .tabs #tab-one-label,
+#tab-two:checked ~ .tabs #tab-two-label,
+#tab-three:checked ~ .tabs #tab-three-label,
+#tab-four:checked ~ .tabs #tab-four-label,
+#tab-five:checked ~ .tabs #tab-five-label{
+  background-color: #fff;
+  cursor: default;
+  border-left-color: $maincolor;
+}
+
+#tab-one:checked ~ .tabs #tab-one-panel,
+#tab-two:checked ~ .tabs #tab-two-panel,
+#tab-three:checked ~ .tabs #tab-three-panel,
+#tab-four:checked ~ .tabs #tab-four-panel,
+#tab-five:checked ~ .tabs #tab-five-panel{
+  display: block;
+}
+
+@media (max-width: 600px){
+.flex-tabs{
+  flex-direction: column;
+  
+  .tab{
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    
+      &:last-of-type{
+        border-bottom: none;
+      }
+  }
+  
+  #tab-one-label{order:1;}
+  #tab-two-label{order: 3;}
+  #tab-three-label{order: 5;}
+  #tab-four-label{order: 7;}
+  #tab-five-label{order: 9;}
+  #tab-one-panel{order: 2;}
+  #tab-two-panel{order: 4;}
+  #tab-three-panel{order: 6;}
+  #tab-four-panel{ order: 8;}
+  #tab-five-panel{ order: 10;}
+}
+
+  #tab-one:checked ~ .tabs #tab-one-label,
+  #tab-two:checked ~ .tabs #tab-two-label,
+  #tab-three:checked ~ .tabs #tab-three-label,
+  #tab-four:checked ~ .tabs #tab-four-label,
+  #tab-four:checked ~ .tabs #tab-five-label{
+    border-bottom: none;
+  }
+
+#tab-one:checked ~ .tabs #tab-one-panel,
+#tab-two:checked ~ .tabs #tab-two-panel,
+#tab-three:checked ~ .tabs #tab-three-panel,
+#tab-four:checked ~ .tabs #tab-four-panel,
+#tab-five:checked ~ .tabs #tab-five-panel{
+  border-bottom: 1px solid #ccc;
+}
+}
