@@ -496,6 +496,17 @@ section, .section-dark {
   justify-content: center;
 }
 
+#video {
+  background-size: cover;
+  width: 100vw;
+  height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  opacity: 100%;
+  z-index: -1;
+}
+
 @media (max-width: 800px) {
   .img-responsive {
     height: 100%;
@@ -509,7 +520,7 @@ section, .section-dark {
   background-size: cover;
   opacity: 100%;
   background-position: 5% 10%;
-  background-image: url("/static/emp.png");
+  background-image: url("/static/sony-photos/DSC02014.jpg");
 }
 
 .big-image-quality {
@@ -568,14 +579,14 @@ section, .section-dark {
 
 .overlay-home {
   position: absolute;
-  height: 100%;
+  height: 90%;
   width: 100%;
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.519);
+  background-color: rgba(255, 255, 255, 0.641);
 }
 
 .product-line-container {
