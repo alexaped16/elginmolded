@@ -530,7 +530,7 @@ section, .section-dark {
   background-size: cover;
   opacity: 60%;
   background-position: 70% 70%;
-  background-image: url("/static/plant_pictures/IMG_7465_Fotor.jpg");
+  background-image: url("/static/sony-photos/DSC01999.jpg");
 }
 
 .big-image-services {
@@ -586,7 +586,19 @@ section, .section-dark {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.641);
+  background-color: rgba(255, 255, 255, 0.721);
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.721);
 }
 
 .product-line-container {
@@ -715,7 +727,7 @@ section.section--dark, .section--dark.section-dark {
   position: relative;
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url("../static//emp.png");
+  background-image: url("/static/sony-photos/DSC02053.jpg");
 }
 
 .overlay-divisions {
@@ -1405,7 +1417,8 @@ fieldset {
 #tab-two:checked ~ .tabs #tab-two-label,
 #tab-three:checked ~ .tabs #tab-three-label,
 #tab-four:checked ~ .tabs #tab-four-label,
-#tab-five:checked ~ .tabs #tab-five-label {
+#tab-five:checked ~ .tabs #tab-five-label,
+#tab-six:checked ~ .tabs #tab-six-label {
   background-color: #fff;
   cursor: default;
   border-left-color: #004280;
@@ -1415,7 +1428,8 @@ fieldset {
 #tab-two:checked ~ .tabs #tab-two-panel,
 #tab-three:checked ~ .tabs #tab-three-panel,
 #tab-four:checked ~ .tabs #tab-four-panel,
-#tab-five:checked ~ .tabs #tab-five-panel {
+#tab-five:checked ~ .tabs #tab-five-panel,
+#tab-six:checked ~ .tabs #tab-six-panel {
   display: block;
 }
 
@@ -1445,6 +1459,9 @@ fieldset {
   .flex-tabs #tab-five-label {
     order: 9;
   }
+  .flex-tabs #tab-six-label {
+    order: 11;
+  }
   .flex-tabs #tab-one-panel {
     order: 2;
   }
@@ -1460,18 +1477,23 @@ fieldset {
   .flex-tabs #tab-five-panel {
     order: 10;
   }
+  .flex-tabs #tab-six-panel {
+    order: 12;
+  }
   #tab-one:checked ~ .tabs #tab-one-label,
 #tab-two:checked ~ .tabs #tab-two-label,
 #tab-three:checked ~ .tabs #tab-three-label,
 #tab-four:checked ~ .tabs #tab-four-label,
-#tab-four:checked ~ .tabs #tab-five-label {
+#tab-five:checked ~ .tabs #tab-five-label,
+#tab-six:checked ~ .tabs #tab-six-label {
     border-bottom: none;
   }
   #tab-one:checked ~ .tabs #tab-one-panel,
 #tab-two:checked ~ .tabs #tab-two-panel,
 #tab-three:checked ~ .tabs #tab-three-panel,
 #tab-four:checked ~ .tabs #tab-four-panel,
-#tab-five:checked ~ .tabs #tab-five-panel {
+#tab-five:checked ~ .tabs #tab-five-panel,
+#tab-six:checked ~ .tabs #tab-six-panel {
     border-bottom: 1px solid #ccc;
   }
 }/*# sourceMappingURL=main.css.map */
