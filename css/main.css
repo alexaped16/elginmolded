@@ -362,6 +362,15 @@ a {
   color: rgba(255, 255, 255, 0.857);
 }
 
+.large-text {
+  font-size: 80px;
+}
+
+@media (max-width: 700px) {
+  .large-text {
+    font-size: 45px;
+  }
+}
 .pinside10 {
   padding: 10px;
 }
@@ -499,7 +508,7 @@ section, .section-dark {
 #video {
   background-size: cover;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
@@ -514,7 +523,7 @@ section, .section-dark {
   }
 }
 .big-image-home {
-  height: 60vh;
+  height: 100vh;
   width: 100vw;
   position: relative;
   background-size: cover;
@@ -555,13 +564,12 @@ section, .section-dark {
 
 .overlay-facility {
   position: absolute;
-  height: 50%;
-  width: 80%;
-  top: 10px;
-  right: 5rem;
+  height: 100%;
+  width: 90%;
+  top: 15px;
   display: flex;
-  align-items: flex-start;
-  justify-content: right;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -579,7 +587,7 @@ section, .section-dark {
 
 .overlay-home {
   position: absolute;
-  height: 90%;
+  height: 100%;
   width: 100%;
   display: flex;
   padding: 1rem;
